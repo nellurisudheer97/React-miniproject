@@ -1,0 +1,29 @@
+.Incident{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    width: 200px;
+    border: 1px solid;
+    margin-top: 30px;
+    font-size:medium;
+    font-weight:bolder;
+    font-family:sans-serif;
+    background-color: rgb(112, 198, 238);
+}
+.buttons{
+    background-color: red;
+    font-weight: 500;
+}
+.buttons:hover{
+    background-color: chartreuse;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}

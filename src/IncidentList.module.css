@@ -1,0 +1,33 @@
+.IncidentList{
+    display: flex ;
+    flex-wrap: wrap;
+    width:100%;
+    gap: 15px;
+
+}
+.forms{
+    color: black;
+    display:flex ;
+    width: 100%;
+    align-items: center;
+    justify-content:space-around;
+    padding:30px;
+    font-weight: bolder;
+    background-color:grey;
+    
+}
+.button:hover{
+background-color: lightgreen;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.save:hover{
+    background-color: green;
+}
+
