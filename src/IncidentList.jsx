@@ -8,12 +8,12 @@ function IncidentList({ Incidents, onAdd, onDelete }) {
     // const { darkmode } = useContext(ThemeContext);
     const theme = useContext(ThemeContext);
     const [form, setForm] = useState({
-        incId: '',
-        priority: '1',
-        severity: 'low',
+        incident_id: '',
+        priority: 'low',
+        severity: '1',
         status: 'open'
+    });
 
-    })
     function handleChange(e) {
         const { name, value } = e.target;
         setForm(prev => ({ ...prev, [name]: value }));
@@ -22,8 +22,9 @@ function IncidentList({ Incidents, onAdd, onDelete }) {
     function handleSubmit(e) {
         e.preventDefault();
         onAdd(form);
-        setForm({ incId: "", priority: "low", severity: "1", status: "open" });
+        setForm({ incident_id: "", priority: "low", severity: "1", status: "open" });
     }
+
 
     return (
         <>
@@ -31,7 +32,8 @@ function IncidentList({ Incidents, onAdd, onDelete }) {
                 <div>
                     <form onSubmit={handleSubmit} className={styles.forms} >
                         <label for="incId">Incident_Id:
-                            <input type="text" id="incId" name="incId" placeholder='INC-11111' onChange={handleChange} />
+                            <input type="text" id="incident_id" name="incident_id" placeholder='INC-11111' value={form.incident_id} onChange={handleChange}
+                            />
                         </label>
                         <label for="priority">Priority:
                             <select id="priority" name="priority" onChange={handleChange}>

@@ -4,7 +4,7 @@ import {Button} from '@mui/material';
 function Incident({incident,handleClick}){
     const{incident_id,priority,severity,status}=incident;
     const[form,setForm]=useState({
-        incId:'',
+        incident_id:'',
         priority:'low',
         severity:'1',
         status:'open'
